@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HOME OFFICE SHOP - จันทร์เพ็ญ</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Prompt:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0E2440;--navy2:#0A1930;--gold:#E8C88A;--gold2:#C5A46D;--goldLight:#FFF3D0}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--navy);color:#fff;font-family:'Prompt',sans-serif}
+h1,h2{font-family:'Cormorant Garamond',serif}
+.top{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:18px 28px;z-index:10}
+.top .brand{font-size:11px;letter-spacing:4px;color:var(--gold)}
+.top .right{display:flex;gap:20px;align-items:center}
+.top .menu{font-size:11px;letter-spacing:3px;color:var(--gold);opacity:.8}
+.lang{border:1px solid var(--gold);background:transparent;color:var(--gold);padding:6px 14px;font-size:11px;letter-spacing:2px;border-radius:20px;cursor:pointer}
+.hero{min-height:92vh;background:radial-gradient(100% 100% at 50% 0%, #1D3A5F 0%, #0E2440 60%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:90px 20px 40px}
+.logo{width:320px;max-width:80vw;margin-bottom:10px}
+.logo img{width:100%}
+.hero h1{font-size:62px;color:var(--goldLight);line-height:1.1;text-shadow:0 2px 15px rgba(0,0,0,.5)}
+.hero h1 span{color:var(--gold)}
+.subtitle{margin-top:12px;color:var(--gold);letter-spacing:6px;font-size:12px;opacity:.9}
+.web{margin-top:12px;color:var(--gold);opacity:.6;font-size:14px;letter-spacing:1px}
+.btns{display:flex;gap:18px;margin-top:36px;flex-wrap:wrap;justify-content:center}
+.btn{padding:14px 36px;border:1.5px solid var(--gold);color:var(--gold);text-decoration:none;font-size:12px;letter-spacing:3px;border-radius:4px;transition:.3s}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);font-weight:700}
+.btn:hover{transform:translateY(-2px)}
+.section{max-width:1100px;margin:0 auto;padding:80px 22px;text-align:center;border-top:1px solid rgba(197,164,109,.15)}
+.section h2{font-size:38px;color:var(--goldLight)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:40px;text-align:left}
+.card{background:rgba(255,255,255,.05);border:1px solid rgba(197,164,109,.2);border-radius:14px;overflow:hidden}
+.card img{width:100%;height:180px;object-fit:cover;opacity:.9}
+.card .info{padding:20px}
+.card h3{color:var(--gold);font-size:18px}
+.card p{margin-top:8px;color:rgba(255,255,255,.6);font-size:13px;line-height:1.7}
+.footer{background:var(--navy2);text-align:center;padding:30px;color:rgba(255,255,255,.4);font-size:11px;letter-spacing:2px}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="brand">HOME OFFICE SHOP</div>
+  <div class="right">
+    <div class="menu" data-th="สินค้า • เกี่ยวกับ • ค้าส่ง" data-en="PRODUCTS • ABOUT • WHOLESALE">PRODUCTS • ABOUT • WHOLESALE</div>
+    <button class="lang" onclick="toggleLang()" id="langBtn">TH / EN</button>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="logo"><img src="logo.png" alt="logo" onerror="this.style.display='none'"></div>
+  <h1 data-th="HOME OFFICE SHOP" data-en="HOME OFFICE SHOP">HOME OFFICE SHOP</h1>
+  <div class="subtitle" data-th="• ค้าส่ง • & • อุปกรณ์สำนักงาน •" data-en="• WHOLESALE • & • SUPPLIES •">• WHOLESALE • & • SUPPLIES •</div>
+  <div class="web">homeofficeshop.com | 065-398-1024</div>
+  <div class="btns">
+    <a class="btn btn-gold" href="#work" data-th="ดูผลงาน" data-en="SHOP NOW">SHOP NOW</a>
+    <a class="btn" href="#contact" data-th="ติดต่อเรา" data-en="CONTACT US">CONTACT US</a>
+  </div>
+</div>
+
+<div id="work" class="section">
+  <h2 data-th="ผลงานออกแบบ 1 คูหา" data-en="Featured Project - 1 Shophouse">Featured Project - 1 Shophouse</h2>
+  <p style="margin-top:10px;color:rgba(255,255,255,.5)" data-th="คลิกที่รูปเพื่อดูโครงสร้างรายละเอียด" data-en="Click image to view structure details">Click image to view structure details</p>
+  <div class="grid">
+    <div class="card"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600"><div class="info"><h3 data-th="ออฟฟิศ 1 คูหา - มินิมอล" data-en="1 Shophouse Office - Minimal">1 Shophouse Office - Minimal</h3><p data-th="แปลนเปิดโล่ง พร้อมเคาน์เตอร์ค้าส่ง" data-en="Open plan with wholesale counter">Open plan with wholesale counter</p></div></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=600"><div class="info"><h3 data-th="มุมทำงาน + สต็อก" data-en="Work & Stock Area">Work & Stock Area</h3><p data-th="จัดเก็บสินค้าเป็นระเบียบ ดูพรีเมียม" data-en="Premium storage system">Premium storage system</p></div></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?q=80&w=600"><div class="info"><h3 data-th="หน้าร้านค้าส่ง" data-en="Wholesale Front">Wholesale Front</h3><p data-th="โชว์สินค้าหน้าร้าน ดึงดูดลูกค้า" data-en="Front display to attract customers">Front display to attract customers</p></div></div>
+  </div>
+</div>
+
+<div id="contact" class="section">
+  <h2 data-th="ติดต่อสั่งซื้อ" data-en="Contact Us">Contact Us</h2>
+  <div style="margin-top:24px;color:var(--gold);line-height:2.2">LINE: @homeofficeshop<br>โทร: 065-398-1024<br>14 หมู่ 1 ต.บ้านใหม่<br>homeofficeshop.com</div>
+</div>
+
+<div class="footer">HOME OFFICE SHOP © 2026</div>
+
+<script>
+let isTH = false;
+function toggleLang(){
+  isTH = !isTH;
+  document.getElementById('langBtn').innerText = isTH ? 'EN / TH' : 'TH / EN';
+  document.querySelectorAll('[data-th]').forEach(el=>{
+    el.innerText = isTH ? el.getAttribute('data-th') : el.getAttribute('data-en');
+  });
+}
+</script>
+</body>
+</html>
